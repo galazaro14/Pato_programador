@@ -1,11 +1,11 @@
 #include "Cliente.cpp"
-#include<iostream>
+#include <iostream>
 using namespace std;
 main(){
 	string nit,nombres,apellidos,direccion;
 	int telefono;
 	
-	cout<<"Ingresar Nit: ";
+	cout<<"Ingresar NIT: ";
 	cin>>nit;
 	cout<<"Ingresar Nombres: ";
 	cin>>nombres;
@@ -18,4 +18,10 @@ main(){
 	//instancia de un objeto
 	Cliente obj = Cliente(nombres,apellidos,direccion,telefono,nit);
 	obj.mostrar();
+	
+	cout<<"Ingresar NIT: ";
+	cin>>nit;
+	obj.setNit(nit);
+	obj.mostrar();
+	
 }
